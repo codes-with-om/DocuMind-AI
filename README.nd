@@ -1,0 +1,180 @@
+# 📄 DocuMind AI
+
+DocuMind AI is a production-style RAG (Retrieval Augmented Generation) chatbot that allows users to upload PDF documents and ask questions based only on the document content.
+
+The application uses semantic search with vector embeddings to retrieve relevant information and generates answers using an LLM.
+
+---
+
+## 🚀 Features
+
+- User Registration & Login (JWT Authentication)
+- Upload PDF Documents
+- Automatic Text Extraction
+- Chunking & Embeddings
+- Chroma Vector Database
+- Retrieval-Augmented Generation (RAG)
+- Ask Questions About Documents
+- Source Citation with Page Number
+- Chat History
+- Delete Individual Chats
+- Clear Complete Chat History
+- Delete Documents
+- Mobile Responsive UI
+- Multi-User Support
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+
+- FastAPI
+- SQLAlchemy
+- SQLite
+- JWT Authentication
+- LangChain
+
+### AI / RAG
+
+- HuggingFace Embeddings
+- Chroma Vector Database
+- OpenRouter LLM
+- Semantic Search
+
+### Frontend
+
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## 📂 Project Structure
+
+```text
+AI-RAG-CHATBOT/
+│
+├── app/
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   └── rag_pipeline.py
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+├── data/
+├── vectorstore/
+├── .env
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/documind-ai.git
+
+cd documind-ai
+```
+
+### Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate Environment
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Linux / Mac
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file:
+
+```env
+OPENROUTER_API_KEY=your_api_key
+SECRET_KEY=your_secret_key
+```
+
+---
+
+## ▶️ Run Application
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Open:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## 🧠 How It Works
+
+1. User uploads a PDF.
+2. Text is extracted from the PDF.
+3. Text is split into chunks.
+4. Chunks are converted into embeddings.
+5. Embeddings are stored in Chroma Vector Database.
+6. User asks a question.
+7. Relevant chunks are retrieved using semantic search.
+8. Retrieved context is sent to the LLM.
+9. Answer is generated with source citation.
+
+---
+
+## 📸 Screenshots
+
+Add screenshots here after deployment.
+
+---
+
+## 🔮 Future Improvements
+
+- Streaming Responses
+- Confidence Score
+- Multi-Document Search
+- Admin Dashboard
+- Cloud Database (PostgreSQL)
+- Docker Deployment
+
+---
+
+## 👨‍💻 Author
+
+Om Pratap Singh
+
+AI Engineer
+
+Sri Ganganagar, Rajasthan, India

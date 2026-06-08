@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocuMind AI</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div id="authSection" class="auth-page">
+      <div class="auth-card">
+        <h1 id="authTitle">Welcome Back</h1>
+        <p id="authSubtitle">Login to continue using DocuMind AI.</p>
+
+        <input type="email" id="emailInput" placeholder="Email" />
+        <input type="password" id="passwordInput" placeholder="Password" />
+
+        <button id="loginBtn">Login</button>
+        <button id="registerBtn" class="secondary-btn hidden">
+          Create Account
+        </button>
+
+        <p class="auth-switch" id="switchAuthMode">
+          Don't have an account? Register
+        </p>
+
+        <p id="authMessage"></p>
+      </div>
+    </div>
+
+    <div id="dashboardSection" class="dashboard hidden">
+      <div class="mobile-topbar">
+        <button id="openDocsBtn">☰ Docs</button>
+        <span>DocuMind AI</span>
+        <button id="openHistoryBtn">History</button>
+      </div>
+
+      <aside class="sidebar">
+        <div>
+          <h2>DocuMind</h2>
+          <p class="small-text">AI Document Reader</p>
+        </div>
+
+        <div class="upload-box">
+          <h3>Upload PDF</h3>
+          <input type="file" id="fileInput" accept=".pdf" />
+          <button id="uploadBtn">Upload</button>
+          <p id="uploadResult"></p>
+        </div>
+
+        <div class="documents-box">
+          <h3>Documents</h3>
+          <div id="documentsList"></div>
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+      </aside>
+
+      <main class="chat-area">
+        <div class="chat-header">
+          <h1>Ask your document</h1>
+          <p>Upload a PDF, select a document, and ask questions from it.</p>
+        </div>
+
+        <div id="chatBox" class="chat-box">
+          <div class="bot-message">
+            Upload or select a document and ask me anything from it.
+          </div>
+        </div>
+
+        <div class="question-bar">
+          <input
+            type="text"
+            id="questionInput"
+            placeholder="Ask a question..."
+          />
+          <button id="askBtn">Ask</button>
+        </div>
+      </main>
+
+      <aside class="history-panel">
+        <div class="history-header">
+          <h3>Chat History</h3>
+          <button id="clearHistoryBtn">Clear</button>
+        </div>
+
+        <div id="historyList"></div>
+      </aside>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
