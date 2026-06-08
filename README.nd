@@ -178,3 +178,5 @@ Om Pratap Singh
 AI Engineer
 
 Sri Ganganagar, Rajasthan, India
+
+> Note: This project is designed for local execution. Cloud deployment requires higher memory because local embedding models and ChromaDB are used.
