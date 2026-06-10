@@ -274,16 +274,10 @@ AI Engineer
 
 Sri Ganganagar, Rajasthan, India
 
-<<<<<<< HEAD
-> Note: This project is designed for local execution. Cloud deployment requires higher memory because local embedding models and ChromaDB are used.
-=======
 Portfolio: https://oms-portfolio-2reu.onrender.com/
 
 LinkedIn: https://www.linkedin.com/in/om-pratap-singh-438247331/
 
 GitHub: https://github.com/codes-with-om
 
----
-
 > Note: This project is currently optimized for local execution. Cloud deployment requires additional memory resources because embedding generation and ChromaDB storage are performed locally.
->>>>>>> 9d44ca2 (add Screenshots in README)
