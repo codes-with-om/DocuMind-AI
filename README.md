@@ -227,23 +227,23 @@ http://127.0.0.1:8000
 
 ### Login Page
 
-<img src="screenshots/login_page.png" width="600">
+<img src="screenshots/login_page.png" width="800">
 
 ### Landing Page
 
-<img src="screenshots/landing_page.png" width="600">
+<img src="screenshots/landing_page.png" width="800">
 
 ### PDF Upload
 
-<img src="screenshots/upload-pdf.png" width="600">
+<img src="screenshots/upload-pdf.png" width="800">
 
 ### Chat Interface
 
-<img src="screenshots/chat-interface.png" width="600">
+<img src="screenshots/chat-interface.png" width="800">
 
 ### Source Citation Output
 
-<img src="screenshots/source-citation.png" width="600">
+<img src="screenshots/source-citation.png" width="800">
 
 ---
 
